@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import DummyImg from "../assets/image_01.jpg";
 import MyTable from "./component/MyTable";
+import PageList from "./pages/PageList";
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
         </p>
         <img src={DummyImg} />
       </div>
+      <PageList
+        list={[
+          { id: 101, name: "Hundred One" },
+          { id: 102, name: "Hundred Two" },
+        ]}
+      />
     </div>
   );
 }

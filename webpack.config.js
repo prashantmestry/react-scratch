@@ -14,7 +14,12 @@ module.exports = {
       {
         test: /\.jsx?$/, // which extension type file we have to proide to webpack for transpiling purpose.
         exclude: /node_modules/, // do not include node_module for transpilation.
-        use: "babel-loader", // use babel-loader when transpiling .js or .jsx files.
+        use: ["babel-loader"], // use babel-loader when transpiling .js or .jsx files.
+      },
+      {
+        test: /\.(ts|tsx)?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -33,7 +38,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   plugins: [
     new HtmlWebpackPlugin({
