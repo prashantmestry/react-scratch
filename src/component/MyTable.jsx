@@ -1,13 +1,15 @@
+import React from "react";
+//
 const MyTable = () => {
   return (
     <div>
       <table>
         <thead>
-          <th>
-            <td>No</td>
-            <td>Name</td>
-            <td>Age</td>
-          </th>
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
         </thead>
         <tbody>
           <tr>

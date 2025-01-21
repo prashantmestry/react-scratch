@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"], // css-loader to import css file in .jsx file and style-loader is to display applied css on element.
+        use: ["style-loader", "css-loader", "postcss-loader"], // css-loader to import css file in .jsx file and style-loader is to display applied css on element.
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i, // match image format.
