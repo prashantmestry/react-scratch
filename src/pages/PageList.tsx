@@ -12,7 +12,7 @@ type PageListProps = {
 const PageList = (props: PageListProps) => {
   return (
     <div>
-      <h3>Page list to get help from</h3>
+      <h3 data-testid="list-title">Page list to get help from</h3>
       <ul>
         <li>https://www.youtube.com/watch?v=ooM5A0oSbyE</li>
       </ul>
