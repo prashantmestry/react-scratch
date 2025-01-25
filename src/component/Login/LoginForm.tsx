@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import LoginConfirm from "./LoginConfirm";
 
 type userType = {
