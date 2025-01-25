@@ -1,0 +1,20 @@
+name: CI - Jest Coverage Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16" # Use the Node.js version your project requires
+      - run: npm install
+      - run: npm test -- --coverage
+      - run: npm run test:coverage # Optional if you have a custom script for coverage check
