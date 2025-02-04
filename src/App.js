@@ -1,18 +1,16 @@
-import React from "react";
-import "./App.css";
-import MyTable from "./component/MyTable";
-import PageList from "./pages/PageList";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import React from 'react';
+import './App.css';
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+import Contact from './pages/Contact.js';
 
 import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
-} from "react-router-dom";
-import { RouterProvider } from "react-router";
-import RootLayout from "./layout/RootLayout";
+} from 'react-router-dom';
+import { RouterProvider } from 'react-router';
+import RootLayout from './layout/RootLayout';
 
 function App() {
   const router = createBrowserRouter(
@@ -41,12 +39,7 @@ function App() {
     //     </p>
 
     //   </div>
-    //   <PageList
-    //     list={[
-    //       { id: 101, name: "Hundred One" },
-    //       { id: 102, name: "Hundred Two" },
-    //     ]}
-    //   />
+
     // </div>
   );
 }

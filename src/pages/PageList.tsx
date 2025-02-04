@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type ListProps = {
   id: number;
@@ -16,7 +16,7 @@ const PageList = (props: PageListProps) => {
       <ul>
         <li>https://www.youtube.com/watch?v=ooM5A0oSbyE</li>
       </ul>
-      {props.list.map((item) => {
+      {(props.list || []).map((item: ListProps) => {
         return <div key={item.id}>{item.name}</div>;
       })}
     </div>

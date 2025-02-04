@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const User = () => {
   const [user, setUser] = useState(null);
@@ -7,7 +7,7 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts/1"
+        'https://jsonplaceholder.typicode.com/posts/1'
       );
       setUser(response.data);
     };
@@ -15,7 +15,7 @@ const User = () => {
   }, []);
 
   if (!user) {
-    return "Loading...";
+    return 'Loading...';
   }
 
   return <div>{user.title}</div>;

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import User from "./User";
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import User from './User';
 //
 let userInfo = {
-  firstName: "",
-  lastName: "",
+  firstName: '',
+  lastName: '',
 };
 const Home = () => {
   const [user, setUser] = useState(userInfo);
@@ -27,7 +27,7 @@ const Home = () => {
   const formHandler = (e) => {
     e.preventDefault();
     dispatch({
-      type: "ADD_USER",
+      type: 'ADD_USER',
       payload: user,
     });
     resetForm();
@@ -90,7 +90,7 @@ const Home = () => {
             <ul className="pl-4">
               {userList.map((item, ind) => {
                 return (
-                  <li className="list-decimal" key={item + "-" + ind}>
+                  <li className="list-decimal" key={item + '-' + ind}>
                     {`${item.firstName} ${item.lastName}`}
                   </li>
                 );
@@ -103,6 +103,9 @@ const Home = () => {
       </div>
       <div className="bg-slate-200 mt-6 p-4">
         <User />
+      </div>
+      <div className="about-container">
+        This test is to check .less format of css
       </div>
     </>
   );

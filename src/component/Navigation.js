@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import pageScreen from "../../assets/pageScreen.jpg";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import pageScreen from '../../assets/pageScreen.jpg';
 //
 const Navigation = () => {
   return (
